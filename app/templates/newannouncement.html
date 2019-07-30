@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>New announcement</title>
+    <link rel="shortcut icon" type="image/png" href="../static/atom.jpg"/>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <link rel="stylesheet" href="static/style.css" />
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- icons css -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+</head>
+
+<body>
+
+    <form method="post" action="/confirmation">
+        <div class="container indigo lighten-4" id="bigContainer">
+            <div class = "row">
+    </div>
+    <div class="row">
+      <div class="col s1">
+        <img src="../static/atom.jpg" style="width:120%"></img>
+      </div>
+      <div class="col s11">
+        <h4>
+          Add an announcement for LS3:
+        </h4>
+      </div>
+    </div>
+
+            <div class="row">
+                <div class="input-field col s6">
+                    <input placeholder="Your Name" id="name" name="submitterName" type="text" value = "Your Name">
+                    <label for="name">Your Name</label>
+                </div>
+                <div class="input-field col s6">
+                    <!-- <i class="material-icons prefix modal-trigger" href="#modal1" id="addIcon">add</i> -->
+                    <input placeholder="Your Club / Class / Category" id="group" name="clubOrGroup" type="text" value="Your Club or Group">
+                    <label for="group">Your Club / Class / Category</label>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s10">
+                    <textarea id="announcement" name="myAnnouncement" class="materialize-textarea"></textarea>
+                    <label for="announcement">Announcement</label>
+                </div>
+                <div class="col s2">
+                    <input type="submit" class="waves-effect blue-grey lighten-1 waves-light btn-large" value="Submit"></input>
+                </div>
+            </div>
+
+        </div>
+    </form>
+</body>
+
+</html>
